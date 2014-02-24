@@ -18,23 +18,7 @@
 
 self=`basename $0`
 
-# ---------------------------------------------------------
-# Configuration step, you are free to change settings below.
-# IMG_FOLDER   - the directory to in which the photos will be stored.
-#                Make sure that the directory is provided as an absolute
-#                path.
-
-# PREFIX       - filename prefix.
-# SHOW_PREVIEW - determines if preview of each photo will be
-#                displayed after downloading
-# VIEWER_NAME  - name of the image viever. Put a name of your favourite image
-#                viever
-# --------------------------------------------------------
-
-IMG_FOLDER=
-PREFIX=`date +"%Y-%m-%d-%H-%M-%s"`
-SHOW_PREVIEW=true
-VIEWER_NAME=geeqie
+source session_config.sh
 
 # --------------------------------------------------------
 # You'd better not edit the code below
@@ -56,7 +40,7 @@ case "$ACTION" in
         echo "$self: DOWNLOAD to $ARGUMENT"
         
         # Copy the downloaded photo to the target directory:
-        cp -rfv $ARGUMENT ${IMG_FOLDER}/${PREFIX}.cr2
+        mv $ARGUMENT ${IMG_FOLDER}/${PREFIX}.cr2
         
         # If we want to see a preview of each phtoto: 
         if [ ${SHOW_PREVIEW} -eq true ]
