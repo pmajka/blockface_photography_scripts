@@ -14,18 +14,19 @@ Dependencies
 Installation
 ------------
 
-  * Install dependencies and clone the repository from githib
+  * Install dependencies and clone the repository from github
 
-    sudo apt-get install gphoto2 geeqie
+    ```sudo apt-get install gphoto2 geeqie
     mkdir -p ~/blockface_photos && cd ~/blockface_photos
     git clone https://github.com/pmajka/blockface_photography_scripts.git .
-
+    ```
 
 Usage
 -----
 
  * Start new session and enter required data (edit the `session_config.sh`
    file),
+ * Set up your camera and leave it in manual mode,
  * Collect each photo with `./grab`,
  * Enjoy.
 
