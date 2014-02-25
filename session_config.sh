@@ -5,7 +5,7 @@
 
 # the directory to in which the photos will be stored.  Make sure that the
 # directory is provided as an absolute path.
-IMG_FOLDER=
+IMG_FOLDER=change_me
 
 # filename prefix, can include e.g. specimen name
 PREFIX=`date +"%Y-%m-%d-%H-%M-%s"`

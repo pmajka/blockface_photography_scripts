@@ -36,14 +36,13 @@ case "$ACTION" in
         echo "$self: START"
         ;;
     download)
-        pkill geeqie
         echo "$self: DOWNLOAD to $ARGUMENT"
         
         # Copy the downloaded photo to the target directory:
         mv $ARGUMENT ${IMG_FOLDER}/${PREFIX}.cr2
         
         # If we want to see a preview of each phtoto: 
-        if [ ${SHOW_PREVIEW} -eq true ]
+        if [ ${SHOW_PREVIEW} = 'true' ]
         then
             geeqie $IMG_FOLDER/${PREFIX}.cr2 &
         fi
