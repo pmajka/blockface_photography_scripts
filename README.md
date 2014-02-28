@@ -25,7 +25,7 @@ git clone https://github.com/pmajka/blockface_photography_scripts.git .
 Usage
 -----
 
- * Start new session and enter required data (edit the `session_config.sh`
+ * Start a new session and enter required data (edit the `session_config.sh`
    file),
  * Set up your camera and leave it in manual mode,
  * Collect each photo with `./grab`,
