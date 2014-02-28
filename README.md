@@ -16,10 +16,11 @@ Installation
 
   * Install dependencies and clone the repository from github
 
-    ```sudo apt-get install gphoto2 geeqie
-    mkdir -p ~/blockface_photos && cd ~/blockface_photos
-    git clone https://github.com/pmajka/blockface_photography_scripts.git .
-    ```
+````
+sudo apt-get install gphoto2 geeqie && \
+mkdir -p  ~/blockface_photos && cd ~/blockface_photos && \
+git clone https://github.com/pmajka/blockface_photography_scripts.git .
+````
 
 Usage
 -----
