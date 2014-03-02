@@ -14,7 +14,7 @@ Dependencies
 Installation
 ------------
 
-  * Install dependencies and clone the repository from github
+  * Install dependencies and clone the repository from the GitHub
 
 ````
 sudo apt-get install gphoto2 geeqie && \
